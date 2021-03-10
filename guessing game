@@ -2,7 +2,9 @@
 
 import random
 
-print('I've chosen a random number from 1 to 100, try to guess')
+# Note: You cant use the ' within the string because it matches the outer ', so use " for the string instead of ' because that works as well
+
+print("I've chosen a random number from 1 to 100, try to guess")
 
 number = random.randint(1,100)
 
@@ -10,7 +12,10 @@ i = 0
 
 while True:
   i += 1
-  guess = input()
+  
+  # The line below takes in a string instead of an int, so int() must be added around the input()
+  
+  guess = int(input())
   if guess < number:
     print('Too Low')
     continue
@@ -18,7 +23,7 @@ while True:
     print('Too High')
     continue
   else:
-    print('Good, it took you' + str(i) + 'guesses')
+    print('Good, it took you ' + str(i) + ' guesses')
     sys.exit()  
    		
     
