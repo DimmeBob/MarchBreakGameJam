@@ -1,0 +1,1 @@
+self.bg = Background(sprite("background.jpg"))
