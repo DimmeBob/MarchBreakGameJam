@@ -1,5 +1,7 @@
 # Giving all the sprites and creating the objects
-self.bg = Background(sprite("background.jpg"))
+self.bg = Background()
+self.bg.sprite = sprite("background.jpg")
+
 gate = object_new('gate')
 
 # Also don't sprites need to go under the objects? ~Ryan
